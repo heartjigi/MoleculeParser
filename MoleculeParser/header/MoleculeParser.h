@@ -1,17 +1,18 @@
 #include <map>
 #include <vector>
 #include <string>
+#include <iostream>
+using namespace std;
 
 class MoleculeParser {
 private:
     //member variable
-    string mMoleculeName;
+    string mName;
 public:
     //initializer
     MoleculeParser();
     MoleculeParser(string);
     
     //method
-    map<string, int> parse();
-    void getAST();
+    map<string, int> parse();
 };
